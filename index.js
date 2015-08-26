@@ -6,7 +6,7 @@ var ua = function() {
 var token = null;
 var _getJson = function(cb) {
 	if (token) {
-		return cb();
+		return cb(token);
 	}
 	var isReturn = false;
 	// 不是客户端滚开
